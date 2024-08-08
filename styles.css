@@ -269,7 +269,13 @@ section {
     }
     
     #skills ul {
-        flex-direction: column;
+        justify-content: center;
+    }
+
+    #skills ul li {
+        padding: 0.3em 0.5em; /* Reduce padding for smaller screens */
+        margin: 0.3em; /* Reduce margin for smaller screens */
+        font-size: 0.8em; /* Adjust font size for better fit */
     }
     
     .project, .blog-post {
@@ -319,9 +325,15 @@ section {
     }
     
     #skills ul {
-        flex-direction: column;
+        justify-content: center;
     }
     
+    #skills ul li {
+        padding: 0.3em 0.5em; /* Reduce padding for smaller screens */
+        margin: 0.3em; /* Reduce margin for smaller screens */
+        font-size: 0.75em; /* Adjust font size for better fit */
+    }
+
     .project, .blog-post {
         flex: 0 1 auto; /* Single column layout */
     }
