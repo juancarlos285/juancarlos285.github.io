@@ -38,25 +38,17 @@ This portfolio is designed to highlight my expertise in data science, including 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-portfolio-repo.git
+   git clone https://github.com/juancarlos285/juancarlos285.github.io
    ```
 2. Navigate to the project directory:
    ```bash
-   cd your-portfolio-repo
+   cd juancarlos285.github.io
    ```
 3. Open `index.html` in your preferred web browser to view the portfolio.
 
 ## Usage
 
 Feel free to use this portfolio template to create your own personal portfolio. Customize the HTML, CSS, and content to reflect your own work and style.
-
-## Contributing
-
-If you'd like to contribute to this project, please fork the repository and create a pull request with your changes. Contributions are welcome!
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
