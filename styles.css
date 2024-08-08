@@ -9,6 +9,7 @@ body {
     background-color: #222629; /* Dark Gray background */
     color: #AFDDE5; /* Light Gray text */
     display: flex;
+    flex-direction: column;
 }
 
 /* Sidebar */
@@ -95,8 +96,6 @@ section {
     flex: 0 1 auto; /* Allow pods to adjust their size automatically */
 }
 
-
-
 /* Project Styles */
 .project {
     background-color: #474B4F; /* Medium Gray background */
@@ -135,7 +134,6 @@ section {
 .project a:hover h3 {
     color: #86C232; /* Light Green text on hover */
 }
-
 
 /* Blog Post Styles */
 .blog-post {
@@ -176,9 +174,8 @@ section {
     color: #86C232; /* Light Green text on hover */
 }
 
-
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .sidebar {
         width: 100%;
         height: auto;
@@ -191,6 +188,10 @@ section {
         height: 100px;
     }
 
+    .sidebar .contact-links {
+        justify-content: center;
+    }
+
     .content {
         margin-left: 0;
         width: 100%;
@@ -199,5 +200,49 @@ section {
 
     .container {
         padding: 0 1em;
+    }
+    
+    #skills ul {
+        flex-direction: column;
+    }
+    
+    .project, .blog-post {
+        flex: 0 1 auto; /* Single column layout */
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1em;
+    }
+
+    .sidebar img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .sidebar .contact-links {
+        justify-content: center;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .container {
+        padding: 0 1em;
+    }
+    
+    #skills ul {
+        flex-direction: column;
+    }
+    
+    .project, .blog-post {
+        flex: 0 1 auto; /* Single column layout */
     }
 }
