@@ -33,8 +33,20 @@ body {
     margin-bottom: 1em;
 }
 
+.sidebar h1 {
+    color: #86C232; /* Light Green text */
+    margin-bottom: 0.2em;
+}
+
 .sidebar h2 {
     color: #86C232; /* Light Green text */
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.sidebar h3 {
+    color: #86C232; /* Light Green text */
+    margin-top: 0.2em;
     margin-bottom: 1em;
 }
 
@@ -217,12 +229,16 @@ section {
     }
 
     .sidebar .contact-links {
-        justify-content: center;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        width: 100%;
     }
-
+    
     .hamburger-menu {
-        display: block;
+        align-self: flex-end; /* Move to the right */
+        margin-top: 1em; /* Add some space above */
     }
+    
 
     .content {
         margin-left: 0;
@@ -264,15 +280,14 @@ section {
 
     .sidebar .contact-links {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end; /* Align to the right */
+        justify-content: center; /* Center horizontally */
         width: 100%;
     }
     
     .hamburger-menu {
         align-self: flex-end; /* Move to the right */
-        margin-bottom: 1em; /* Add some space below */
-    }
+        margin-top: 1em; /* Add some space above */
+    }    
     
 
     .content {
