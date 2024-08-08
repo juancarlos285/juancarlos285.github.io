@@ -27,8 +27,8 @@ body {
 
 .sidebar img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    border: 5px solid #AFDDE5;
+    width: 175px;
     object-fit: cover;
     margin-bottom: 1em;
 }
@@ -68,6 +68,23 @@ body {
 
 .sidebar .contact-links a:hover {
     text-decoration: none;
+}
+
+.sidebar .resume-download {
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    background-color: #86C232; /* Light Green background */
+    color: #222629; /* Dark Gray text */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sidebar .resume-download:hover {
+    background-color: #AFDDE5; /* Light Gray background */
+    color: #222629; /* Dark Gray text */
 }
 
 .sidebar .menu {
