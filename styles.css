@@ -58,6 +58,34 @@ body {
     text-decoration: none;
 }
 
+.sidebar .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .menu a {
+    color: #AFDDE5; /* Light Gray text */
+    text-decoration: none;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.sidebar .menu.show {
+    display: flex;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+.hamburger-menu i {
+    font-size: 2em;
+    color: #86C232; /* Light Green */
+}
+
 /* Content */
 .content {
     margin-left: 250px; /* Same as sidebar width */
@@ -192,6 +220,10 @@ section {
         justify-content: center;
     }
 
+    .hamburger-menu {
+        display: block;
+    }
+
     .content {
         margin-left: 0;
         width: 100%;
@@ -226,6 +258,10 @@ section {
 
     .sidebar .contact-links {
         justify-content: center;
+    }
+
+    .hamburger-menu {
+        display: block;
     }
 
     .content {

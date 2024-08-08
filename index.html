@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Juan Acosta Porfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -16,6 +16,16 @@
         <div class="contact-links">
             <a href="https://www.linkedin.com/in/jcacosta285/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:jcacosta285@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <nav class="menu">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#experience">Experience</a>
+        </nav>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
         </div>
     </div>
     <div class="content">
@@ -92,5 +102,10 @@
             </div>
         </section>
     </div>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
