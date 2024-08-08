@@ -78,42 +78,104 @@ section {
 #skills ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the pods horizontally */
 }
 
 #skills ul li {
     background-color: #474B4F; /* Medium Gray background */
-    padding: 0.5em 1em;
-    margin: 0.5em 0;
-    border-radius: 5px;
+    padding: 1em 2em; /* More padding for oval shape */
+    margin: 0.5em;
+    border-radius: 25px; /* Rounded corners for oval shape */
+    box-sizing: border-box;
+    text-align: center;
+    color: #AFDDE5; /* Light Gray text */
+    font-weight: bold;
+    flex: 0 1 auto; /* Allow pods to adjust their size automatically */
 }
+
+
 
 /* Project Styles */
 .project {
     background-color: #474B4F; /* Medium Gray background */
-    padding: 1em;
-    margin: 1em 0;
-    border-radius: 10px;
+    padding: 1em 2em;
+    margin: 1em 0.5em;
+    border-radius: 25px; /* Rounded corners for oval shape */
     border: 1px solid #333;
+    text-align: center;
+    color: #AFDDE5; /* Light Gray text */
+    font-weight: bold;
+    flex: 0 1 calc(50% - 1em); /* Two items per row */
+    box-sizing: border-box;
+    text-decoration: none; /* Remove underline */
+}
+
+.project a {
+    color: #AFDDE5; /* Light Gray text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.project a:hover {
+    color: #86C232; /* Light Green text on hover */
+}
+
+.project p {
+    color: #D3D3D3; /* Light color for description text */
+    font-weight: normal;
 }
 
 .project h3 {
     margin: 0.5em 0;
     color: #AFDDE5; /* Light Gray text */
+    transition: color 0.3s ease; /* Add transition for smooth color change */
 }
+
+.project a:hover h3 {
+    color: #86C232; /* Light Green text on hover */
+}
+
 
 /* Blog Post Styles */
 .blog-post {
     background-color: #474B4F; /* Medium Gray background */
-    padding: 1em;
-    margin: 1em 0;
-    border-radius: 10px;
+    padding: 1em 2em;
+    margin: 1em 0.5em;
+    border-radius: 25px; /* Rounded corners for oval shape */
     border: 1px solid #333;
+    text-align: center;
+    color: #AFDDE5; /* Light Gray text */
+    font-weight: bold;
+    flex: 0 1 calc(50% - 1em); /* Two items per row */
+    box-sizing: border-box;
+    text-decoration: none; /* Remove underline */
+}
+
+.blog-post a {
+    color: #AFDDE5; /* Light Gray text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.blog-post a:hover {
+    color: #86C232; /* Light Green text on hover */
+}
+
+.blog-post p {
+    color: #D3D3D3; /* Light color for description text */
+    font-weight: normal;
 }
 
 .blog-post h3 {
     margin: 0.5em 0;
     color: #AFDDE5; /* Light Gray text */
+    transition: color 0.3s ease; /* Add transition for smooth color change */
 }
+
+.blog-post a:hover h3 {
+    color: #86C232; /* Light Green text on hover */
+}
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
