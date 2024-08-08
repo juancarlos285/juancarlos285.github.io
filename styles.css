@@ -251,18 +251,29 @@ section {
         padding: 1em;
     }
 
-    .sidebar img {
-        width: 80px;
-        height: 80px;
+    .sidebar h2 {
+        font-size: 1.5em; /* Increase font size by 25% */
     }
+    
+
+    .sidebar img {
+        width: 250px; /* 150px * 1.75 */
+        height: 250px; /* 150px * 1.75 */
+    }
+    
 
     .sidebar .contact-links {
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Align to the right */
+        width: 100%;
     }
-
+    
     .hamburger-menu {
-        display: block;
+        align-self: flex-end; /* Move to the right */
+        margin-bottom: 1em; /* Add some space below */
     }
+    
 
     .content {
         margin-left: 0;
