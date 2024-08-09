@@ -354,10 +354,10 @@ section {
     }
 
     .skill-item {
-        font-size: 1.125em; /* Increase font size by 25% */
-        padding: 0.625em 1.25em; /* Increase padding by 25% */
-        margin: 0.75em; /* Adjust margin for spacing */
-        width: calc(50% - 1.5em); /* Two items per row with some spacing */
+        font-size: 1.25em; /* Increase font size by 25% */
+        padding: 0.75em 1.5em; /* Increase padding by 25% */
+        margin: 1em; /* Adjust margin for spacing */
+        width: calc(50% - 2em); /* Two items per row with some spacing */
         box-sizing: border-box;
     }
 
