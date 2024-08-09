@@ -192,7 +192,7 @@
         
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
     // Hamburger menu functionality
     document.querySelector('.hamburger-menu').addEventListener('click', function() {
         document.querySelector('.menu').classList.toggle('show');
@@ -202,12 +202,16 @@
     const skillItems = document.querySelectorAll(".skill-item");
 
     skillItems.forEach(item => {
-        item.addEventListener("click", function() {
+        item.addEventListener("click", function(e) {
+            e.preventDefault(); // Prevent any default behavior
+            
             if (window.innerWidth <= 768) { // Check if it's mobile view
                 const toolList = this.querySelector(".tool-list");
-                if (toolList.style.display === "block" || toolList.style.display === "") {
+                if (toolList.style.display === "block") {
                     toolList.style.display = "none";
                 } else {
+                    // Close all other tool lists before opening the clicked one
+                    document.querySelectorAll(".tool-list").forEach(list => list.style.display = "none");
                     toolList.style.display = "block";
                 }
             }

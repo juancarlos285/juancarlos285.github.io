@@ -377,6 +377,10 @@ section {
         transform: none;
         background-color: #333;
     }
+
+    #skills .skill-item:hover .tool-list {
+        display: none; /* Disable hover effect on mobile */
+    }
     
 
 
