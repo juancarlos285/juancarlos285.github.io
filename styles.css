@@ -354,8 +354,19 @@ section {
     }
 
     .skill-item {
-        display: block;
-        width: 100%;
+        font-size: 1.125em; /* Increase font size by 25% */
+        padding: 0.625em 1.25em; /* Increase padding by 25% */
+        margin: 0.75em; /* Adjust margin for spacing */
+        width: calc(50% - 1.5em); /* Two items per row with some spacing */
+        box-sizing: border-box;
+    }
+
+    #skills ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Adjust for spacing */
+        padding: 0;
+        margin: 0;
     }
 
     .tool-list {
@@ -370,7 +381,7 @@ section {
 
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .sidebar {
         width: 100%;
         height: auto;
@@ -424,4 +435,4 @@ section {
     .project, .blog-post {
         flex: 0 1 auto; /* Single column layout */
     }
-}
+} */
