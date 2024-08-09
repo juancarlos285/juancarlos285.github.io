@@ -203,9 +203,8 @@
 
     skillItems.forEach(item => {
         item.addEventListener("click", function(e) {
-            e.preventDefault(); // Prevent any default behavior
-            
             if (window.innerWidth <= 768) { // Check if it's mobile view
+                e.preventDefault(); // Prevent any default behavior
                 const toolList = this.querySelector(".tool-list");
                 if (toolList.style.display === "block") {
                     toolList.style.display = "none";
