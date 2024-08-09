@@ -8,8 +8,8 @@ body {
     padding: 0;
     background-color: #222629; /* Dark Gray background */
     color: #AFDDE5; /* Light Gray text */
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 /* Sidebar */
@@ -120,6 +120,7 @@ body {
     margin-left: 250px; /* Same as sidebar width */
     padding: 2em;
     width: calc(100% - 250px);
+    box-sizing: border-box;
 }
 
 .container {
@@ -302,7 +303,6 @@ section {
     margin: 0.3em 0;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .sidebar {
@@ -381,58 +381,4 @@ section {
 
 }
 
-/* @media (max-width: 600px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding: 1em;
-    }
 
-    .sidebar h2 {
-        font-size: 1.5em; /* Increase font size by 25% */
-    }
-    
-
-    .sidebar img {
-        width: 250px; /* 150px * 1.75 */
-        height: 250px; /* 150px * 1.75 */
-    }
-    
-
-    .sidebar .contact-links {
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        width: 100%;
-    }
-    
-    .hamburger-menu {
-        align-self: flex-end; /* Move to the right */
-        margin-top: 1em; /* Add some space above */
-    }    
-    
-
-    .content {
-        margin-left: 0;
-        width: 100%;
-        padding: 1em;
-    }
-
-    .container {
-        padding: 0 1em;
-    }
-    
-    #skills ul {
-        justify-content: center;
-    }
-    
-    #skills ul li {
-        padding: 0.3em 0.5em; /* Reduce padding for smaller screens */
-        margin: 0.3em; /* Reduce margin for smaller screens */
-        font-size: 0.75em; /* Adjust font size for better fit */
-    }
-
-    .project, .blog-post {
-        flex: 0 1 auto; /* Single column layout */
-    }
-} */
