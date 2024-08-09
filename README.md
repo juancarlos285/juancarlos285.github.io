@@ -10,8 +10,6 @@ Welcome to my personal portfolio! This site showcases my work, skills, and exper
 - [Technologies Used](#technologies-used)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
