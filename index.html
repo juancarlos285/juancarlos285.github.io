@@ -193,27 +193,28 @@
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Hamburger menu functionality
-            document.querySelector('.hamburger-menu').addEventListener('click', function() {
-                document.querySelector('.menu').classList.toggle('show');
-            });
-    
-            // Skill item click functionality for mobile
-            const skillItems = document.querySelectorAll(".skill-item");
-    
-            skillItems.forEach(item => {
-                item.addEventListener("click", function() {
-                    if (window.innerWidth <= 768) { // Check if it's mobile view
-                        const toolList = this.querySelector(".tool-list");
-                        if (toolList.style.display === "block") {
-                            toolList.style.display = "none";
-                        } else {
-                            toolList.style.display = "block";
-                        }
-                    }
-                });
-            });
+    // Hamburger menu functionality
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.querySelector('.menu').classList.toggle('show');
+    });
+
+    // Skill item click functionality for mobile
+    const skillItems = document.querySelectorAll(".skill-item");
+
+    skillItems.forEach(item => {
+        item.addEventListener("click", function() {
+            if (window.innerWidth <= 768) { // Check if it's mobile view
+                const toolList = this.querySelector(".tool-list");
+                if (toolList.style.display === "block" || toolList.style.display === "") {
+                    toolList.style.display = "none";
+                } else {
+                    toolList.style.display = "block";
+                }
+            }
         });
+    });
+});
+
     </script>
     
 </body>

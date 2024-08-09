@@ -361,7 +361,7 @@ section {
         box-sizing: border-box;
     }
 
-    #skills ul {
+    #skills > ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around; /* Adjust for spacing */
@@ -370,6 +370,7 @@ section {
     }
 
     .tool-list {
+        /* display: none; */
         position:static;
         margin-top: 0.5em;
         left: auto;
