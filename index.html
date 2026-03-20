@@ -3,233 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Acosta Portfolio</title>
+    <title>Juan Acosta | Data Scientist</title>
+    <meta
+        name="description"
+        content="Portfolio of Juan Acosta, a data scientist focused on machine learning, NLP, and urban analytics."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 <body>
-    <div class="sidebar">
-        <img src="profile_pic.jpg" alt="Your Photo">
-        <h1>Juan Acosta</h1>
-        <h2>Data Scientist</h2>
-        <h3>NYC</h3>
-        <div class="contact-links">
-            <a href="https://www.linkedin.com/in/jcacosta285/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:jcacosta285@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-        <a href="Juan_Acosta_Resume.pdf" class="resume-download" download>Download Resume</a>
-        <div class="hamburger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="menu">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#blog">Blog</a>
-            <a href="#experience">Experience</a>
-        </nav>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#top">Juan Acosta</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="site-menu">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#writing">Writing</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+            </nav>
+        </header>
+
+        <main id="top">
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Data Scientist · New York City</p>
+                    <h1>Turning data into clear stories, useful systems, and better decisions.</h1>
+                    <p class="hero-lead">
+                        I’m Juan Acosta, a data scientist with a background in music and a focus on machine
+                        learning, NLP, and urban analytics. I like building work that feels rigorous,
+                        human-centered, and practical.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="Juan_Acosta_Resume.pdf" download>Download Resume</a>
+                        <a class="button button-secondary" href="#projects">View Projects</a>
+                    </div>
+                </div>
+
+                <aside class="hero-card">
+                    <img src="profile_pic.jpg" alt="Portrait of Juan Acosta">
+                    <div class="hero-card-content">
+                        <p class="card-label">Currently focused on</p>
+                        <ul class="focus-list">
+                            <li>Applied machine learning</li>
+                            <li>NLP and conversational systems</li>
+                            <li>Urban planning and transportation data</li>
+                        </ul>
+                        <div class="contact-links">
+                            <a href="https://www.linkedin.com/in/jcacosta285/" target="_blank" rel="noreferrer">LinkedIn</a>
+                            <a href="mailto:jcacosta285@gmail.com">Email</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="section about-section" id="about">
+                <div class="section-heading">
+                    <p class="section-label">About</p>
+                    <h2>A cross-disciplinary path into data science.</h2>
+                </div>
+                <div class="section-body prose">
+                    <p>
+                        My journey from music teacher to tech professional shaped the way I approach data:
+                        analytically, collaboratively, and with a strong sense of structure. I specialize in
+                        data acquisition, modeling, machine learning, and NLP, with a particular interest in
+                        urban planning and transportation.
+                    </p>
+                    <p>
+                        Outside of work, I’m still deeply connected to jazz and rhythm. I also enjoy soccer,
+                        coffee, chess, and the broader question of how data and AI can be used responsibly for
+                        positive change.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <div class="section-heading">
+                    <p class="section-label">Selected Projects</p>
+                    <h2>Work grounded in real use cases, automation, and applied modeling.</h2>
+                </div>
+                <div class="card-grid">
+                    <article class="project-card">
+                        <a href="https://github.com/juancarlos285/chatbot" target="_blank" rel="noreferrer">
+                            <p class="card-kicker">Conversational AI</p>
+                            <h3>Real Estate Chatbot</h3>
+                            <p>
+                                Built a WhatsApp assistant for real estate inquiries using Twilio, Flask, BERT,
+                                LangChain, and RAG to deliver accurate property information and reduce manual
+                                workload for agents.
+                            </p>
+                        </a>
+                    </article>
+                    <article class="project-card">
+                        <a href="https://github.com/juancarlos285/urban-sound-classifier" target="_blank" rel="noreferrer">
+                            <p class="card-kicker">Audio ML</p>
+                            <h3>Urban Sound Classifier</h3>
+                            <p>
+                                Trained and compared machine learning models on extracted audio features to
+                                classify urban sounds, with XGBoost reaching about 70% accuracy.
+                            </p>
+                        </a>
+                    </article>
+                    <article class="project-card">
+                        <a href="https://github.com/juancarlos285/speech_recognition" target="_blank" rel="noreferrer">
+                            <p class="card-kicker">Deep Learning</p>
+                            <h3>Speech Recognition</h3>
+                            <p>
+                                Designed a voice recognition model for 10 individuals using Mel-spectrograms,
+                                MFCCs, and bidirectional LSTMs, reaching 85% accuracy.
+                            </p>
+                        </a>
+                    </article>
+                    <article class="project-card">
+                        <a href="https://github.com/juancarlos285/distance_matrix" target="_blank" rel="noreferrer">
+                            <p class="card-kicker">Data Infrastructure</p>
+                            <h3>Distance Matrix</h3>
+                            <p>
+                                Created a pipeline around the Google Maps Distance Matrix API to collect,
+                                structure, and store travel data for fast use in Python, Pandas, and SQL
+                                workflows.
+                            </p>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="writing">
+                <div class="section-heading">
+                    <p class="section-label">Writing</p>
+                    <h2>Explaining technical ideas in a way that stays accessible.</h2>
+                </div>
+                <div class="writing-list">
+                    <article class="writing-item">
+                        <a href="https://medium.com/faun/data-driven-urban-planning-illuminating-city-landscapes-through-polar-histograms-and-osmnx-in-4b23f81ef59b" target="_blank" rel="noreferrer">
+                            <h3>Building a Real Estate WhatsApp Chatbot with AI and Automation</h3>
+                            <p>
+                                A walkthrough of building an automated WhatsApp chatbot with Twilio, Flask,
+                                BERT, LangChain, and retrieval-augmented generation.
+                            </p>
+                        </a>
+                    </article>
+                    <article class="writing-item">
+                        <a href="https://medium.com/faun/data-driven-urban-planning-illuminating-city-landscapes-through-polar-histograms-and-osmnx-in-4b23f81ef59b" target="_blank" rel="noreferrer">
+                            <h3>Data-Driven Urban Planning: Polar Histograms and OSMnx</h3>
+                            <p>
+                                An exploration of urban informatics using OSMnx and polar histograms to better
+                                understand transportation networks and city structure.
+                            </p>
+                        </a>
+                    </article>
+                    <article class="writing-item">
+                        <a href="https://medium.com/faun/using-google-maps-distance-matrix-api-to-create-a-distance-table-93419c409d4f" target="_blank" rel="noreferrer">
+                            <h3>Using Google Maps Distance Matrix API to Create a Distance Table</h3>
+                            <p>
+                                A practical guide to calling the Google Maps API, shaping the results with
+                                Pandas, and storing them in SQLite for efficient reuse.
+                            </p>
+                        </a>
+                    </article>
+                    <article class="writing-item">
+                        <a href="https://medium.com/@jcacosta285/unveiling-karatsuba-multiplication-a-breakthrough-in-algorithmic-efficiency" target="_blank" rel="noreferrer">
+                            <h3>Unveiling Karatsuba Multiplication</h3>
+                            <p>
+                                A mathematical and code-focused look at Karatsuba multiplication and why it
+                                matters for algorithmic efficiency.
+                            </p>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="skills">
+                <div class="section-heading">
+                    <p class="section-label">Capabilities</p>
+                    <h2>A toolkit spanning data work, modeling, experimentation, and deployment.</h2>
+                </div>
+                <div class="skills-columns">
+                    <div>
+                        <h3>Core</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Machine Learning</li>
+                            <li>Data Analysis</li>
+                            <li>A/B Testing</li>
+                            <li>NLP</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Tools & Platforms</h3>
+                        <ul class="skill-list">
+                            <li>MySQL, SQLite</li>
+                            <li>Pandas, NumPy, Jupyter</li>
+                            <li>Scikit-Learn, TensorFlow, Keras</li>
+                            <li>XGBoost, PyTorch, NLTK, BERT</li>
+                            <li>AWS: EC2, S3, Lambda</li>
+                            <li>REST APIs, Postman, Flask</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Specialties</h3>
+                        <ul class="skill-list">
+                            <li>Data Visualization with Matplotlib, Seaborn, Plotly, Tableau</li>
+                            <li>Web Scraping with BeautifulSoup</li>
+                            <li>Google Maps API integrations</li>
+                            <li>Audio processing with Librosa</li>
+                            <li>Git and GitHub workflows</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="education">
+                <div class="section-heading">
+                    <p class="section-label">Education</p>
+                    <h2>Technical training supported by a deep background in music and performance.</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <h3>NYU Tandon School of Engineering</h3>
+                        <p class="timeline-meta">Tandon Bridge Program · Completed in 2025</p>
+                        <p>
+                            Completed the NYU Tandon Bridge program, a rigorous foundation in computer science
+                            and mathematics designed to prepare students for advanced study in engineering and
+                            computing.
+                        </p>
+                    </article>
+                    <article class="timeline-item">
+                        <h3>Flatiron School</h3>
+                        <p class="timeline-meta">Immersive Data Science Bootcamp · New York, NY</p>
+                        <p>
+                            Completed intensive training in data acquisition, modeling, statistical analysis,
+                            machine learning, deep learning, and natural language processing.
+                        </p>
+                    </article>
+                    <article class="timeline-item">
+                        <h3>SUNY Purchase</h3>
+                        <p class="timeline-meta">Master of Music in Jazz Performance · Purchase, NY</p>
+                    </article>
+                    <article class="timeline-item">
+                        <h3>Webster University</h3>
+                        <p class="timeline-meta">Bachelor of Music in Jazz Studies · St. Louis, MO</p>
+                    </article>
+                </div>
+            </section>
+        </main>
     </div>
-    <div class="content">
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>Hello! I'm Juan Acosta, a data scientist who loves turning data into meaningful insights. My journey from a music teacher to a tech enthusiast has equipped me with strong analytical and collaborative skills. I specialize in data acquisition, modeling, machine learning, and NLP, with a keen interest in urban planning and transportation. Along the way, I've picked up some solid coding chops that keep my tech toolkit sharp.</p>
-                <p>When I'm not diving into data, you'll find me immersed in jazz, reminiscing about my drumming days, watching soccer, enjoying a good cup of coffee, or strategizing my next move in a chess game. Passionate about using data for positive change and with a professional interest in AI ethics, I'm eager to connect and make a difference together!</p>
-            </div>
-        </section>
-        <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul>
-                    <li class="skill-item">Python</li>
-                    <li class="skill-item">SQL
-                        <ul class="tool-list">
-                            <li>MySQL</li>
-                            <li>SQLite</li>
-                        </ul>
-                    </li>
-                    <li class="skill-item">Machine Learning
-                        <ul class="tool-list">
-                            <li>Scikit-Learn</li>
-                            <li>TensorFlow</li>
-                            <li>Keras</li>
-                            <li>XGBoost</li>
-                            <li>PyTorch</li>
-                        </ul>
-                    </li>
-                    <li class="skill-item">Data Analysis
-                        <ul class="tool-list">
-                            <li>Pandas</li>
-                            <li>NumPy</li>
-                            <li>Jupyter</li>
-                        </ul>
-                    </li>
-                    <li class="skill-item">A/B Testing
-                        <ul class="tool-list">
-                            <li>SciPy</li>
-                        </ul>
-                    </li>
-                    <li class="skill-item">AWS
-                        <ul class="tool-list">
-                            <li>EC2</li>
-                            <li>S3</li>
-                            <li>Lambda</li>
-                        </ul>
-                    </li>
-                    <li class="skill-item">Data Visualization
-                        <ul class="tool-list">
-                            <li>Matplotlib</li>
-                            <li>Seaborn</li>
-                            <li>Plotly</li>
-                            <li>Tableau</li>
-                        </ul>
-                    </li>
-                    <li class="skill-item">Web Scraping
-                        <ul class="tool-list">
-                            <li>BeautifulSoup</li>
-                        </ul>
-                    </li>
-                    <li class="skill-item">APIs
-                        <ul class="tool-list">
-                            <li>RESTful APIs</li>
-                            <li>Postman</li>
-                            <li>Flask</li>
-                            <li>Google Maps API</li>
-                        </ul>
-                    </li>
-                    <li class="skill-item">Git & GitHub
-                        <ul class="tool-list">
-                            <li>Git</li>
-                            <li>GitHub</li>
-                        </ul>
-                    </li>
-                    <li class="skill-item">NLP
-                        <ul class="tool-list">
-                            <li>NLTK</li>
-                            <li>BERT</li>
-                        </ul>
-                    </li>
-                    <li class="skill-item">Audio Processing
-                        <ul class="tool-list">
-                            <li>Librosa</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-        <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="project">
-                    <a href="https://github.com/juancarlos285/chatbot" target="_blank">
-                        <h3>Real Estate Chatbot</h3>
-                        <p>A WhatsApp chatbot for real estate inquiries, built using Twilio, Flask, and BERT. It uses LangChain and RAG for managing context and delivering accurate property information, automating client interactions while easing the workload for agents.</p>
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/juancarlos285/urban-sound-classifier" target="_blank">
-                        <h3>Urban Sound Classifier</h3>
-                        <p>Classify different urban sounds using machine learning techniques. Features extracted from audio signals, tested multiple ML models for prediction, with XGBoost achieving ~70% accuracy.</p>
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/juancarlos285/speech_recognition" target="_blank">
-                        <h3>Speech Recognition</h3>
-                        <p>Create a neural network to recognize voices of 10 different individuals. Extracted and preprocessed Mel-Spectrograms and MFCCs, tested different neural networks, with Bidirectional LSTM layers yielding 85% accuracy.</p>
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/juancarlos285/distance_matrix" target="_blank">
-                        <h3>Distance Matrix</h3>
-                        <p>Create distance matrices and retrieve information from Google Maps API. Set up an API to retrieve information quickly, format it for Python and Pandas, and store it properly with functionality for SQL integration.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-        
-        <section id="blog">
-            <div class="container">
-                <h2>Blog</h2>
-                <div class="blog-post">
-                    <a href="https://medium.com/faun/data-driven-urban-planning-illuminating-city-landscapes-through-polar-histograms-and-osmnx-in-4b23f81ef59b" target="_blank">
-                        <h3>Building a Real Estate WhatsApp Chatbot with AI and Automation</h3>
-                        <p>Discover how I built a fully automated WhatsApp chatbot for real estate inquiries, using cutting-edge tools like Twilio, Flask, BERT, and LangChain. Learn how AI-driven technologies streamline client interactions and reduce real estate agent workloads, with a step-by-step breakdown of the process. Perfect for developers, data scientists, and anyone curious about chatbot development.</p>
-                    </a>
-                </div>
-                <div class="blog-post">
-                    <a href="https://medium.com/faun/data-driven-urban-planning-illuminating-city-landscapes-through-polar-histograms-and-osmnx-in-4b23f81ef59b" target="_blank">
-                        <h3>Data-Driven Urban Planning: Illuminating City Landscapes through Polar Histograms and OSMnx</h3>
-                        <p>The blog post explores the application of OSMnx and polar histograms in urban informatics to visualize and analyze city structures and transportation networks. This approach enhances the understanding of urban environments and supports the development of smarter, more sustainable cities.</p>
-                    </a>
-                </div>
-                <div class="blog-post">
-                    <a href="https://medium.com/faun/using-google-maps-distance-matrix-api-to-create-a-distance-table-93419c409d4f" target="_blank">
-                        <h3>Using Google Maps Distance Matrix API to Create a Distance Table</h3>
-                        <p>This post demonstrates how to call the Google Maps API and create a distance matrix using Pandas. It also covers storing data using SQLite for efficient retrieval and manipulation.</p>
-                    </a>
-                </div>
-                <div class="blog-post">
-                    <a href="https://medium.com/@jcacosta285/unveiling-karatsuba-multiplication-a-breakthrough-in-algorithmic-efficiency" target="_blank">
-                        <h3>Unveiling Karatsuba Multiplication: A Breakthrough in Algorithmic Efficiency</h3>
-                        <p>This post breaks down the Karatsuba multiplication algorithm mathematically and provides Python code for its implementation, showcasing its efficiency in computational mathematics.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section id="education">
-            <div class="container">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Flatiron School</h3>
-                    <p><strong>Program:</strong> Immersive Data Science Bootcamp</p>
-                    <p><strong>Location:</strong> New York, NY</p>
-                    <p><strong>Description:</strong> Completed an intensive data science bootcamp focused on data acquisition, data modeling, statistical analysis, machine learning, deep learning, and natural language processing (NLP).</p>
-                </div>
-                <div class="education-item">
-                    <h3>SUNY Purchase</h3>
-                    <p><strong>Degree:</strong> Master of Music in Jazz Performance</p>
-                    <p><strong>Location:</strong> Purchase, NY</p>
-                </div>
-                <div class="education-item">
-                    <h3>Webster University</h3>
-                    <p><strong>Degree:</strong> Bachelor of Music in Jazz Studies</p>
-                    <p><strong>Location:</strong> St. Louis, MO</p>
-                </div>
-            </div>
-        </section>
-        
-    </div>
+
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    // Hamburger menu functionality
-    document.querySelector('.hamburger-menu').addEventListener('click', function() {
-        document.querySelector('.menu').classList.toggle('show');
-    });
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const siteNav = document.querySelector(".site-nav");
 
-    // Skill item click functionality for mobile
-    const skillItems = document.querySelectorAll(".skill-item");
-
-    skillItems.forEach(item => {
-        item.addEventListener("click", function(e) {
-            if (window.innerWidth <= 768) { // Check if it's mobile view
-                e.preventDefault(); // Prevent any default behavior
-                const toolList = this.querySelector(".tool-list");
-                if (toolList.style.display === "block") {
-                    toolList.style.display = "none";
-                } else {
-                    // Close all other tool lists before opening the clicked one
-                    document.querySelectorAll(".tool-list").forEach(list => list.style.display = "none");
-                    toolList.style.display = "block";
-                }
-            }
+            menuToggle.addEventListener("click", function () {
+                const isOpen = siteNav.classList.toggle("open");
+                menuToggle.setAttribute("aria-expanded", String(isOpen));
+            });
         });
-    });
-});
-
     </script>
-    
 </body>
 </html>
